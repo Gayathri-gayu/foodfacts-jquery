@@ -1,3 +1,84 @@
 {
-  "name": [{"country":"Netherlands","salt":136.51093999999998,"sugar":1707.8300000000004},{"country":"Canada","salt":28.721923999999998,"sugar":743.2200000000001},{"country":"United Kingdom","salt":824.3364669999954,"sugar":18274.16399999997},{"country":"United States","salt":1681.9788339999984,"sugar":17736.409000000007},{"country":"Australia","salt":446.0657169999999,"sugar":5740.980300000005},{"country":"France","salt":26443.692418346225,"sugar":297463.8913000018},{"country":"Germany","salt":2079.3005369999896,"sugar":20928.99799999996},{"country":"Spain","salt":1820.0132807139894,"sugar":16118.659999999974},{"country":"South Africa","salt":4.801759999999999,"sugar":100.61999999999999}]
+  "name": [
+    {
+      "country": "Netherlands",
+      "salt": 136.51093999999998,
+      "sugar": 1707.8300000000004
+    },
+    {
+      "country": "Canada",
+      "salt": 28.721923999999998,
+      "sugar": 743.2200000000001
+    },
+    {
+      "country": "United States",
+      "salt": 1681.9788339999984,
+      "sugar": 17736.409000000007
+    },
+    {
+      "country": "Australia",
+      "salt": 446.0657169999999,
+      "sugar": 5740.980300000005
+    },
+    {
+      "country": "Germany",
+      "salt": 2079.3005369999896,
+      "sugar": 20928.99799999996
+    },
+    {
+      "country": "Spain",
+      "salt": 1820.0132807139894,
+      "sugar": 16118.659999999974
+    },
+    {
+      "country": "South Africa",
+      "salt": 4.801759999999999,
+      "sugar": 100.61999999999999
+    },
+    {
+      "country": "Angola",
+      "salt": 1365.51094,
+      "sugar": 17070.83
+    },
+    {
+      "country": "China",
+      "salt": 2840.721924,
+      "sugar": 7430.22
+    },
+    {
+      "country": "Argentina",
+      "salt": 168.9788339999984,
+      "sugar": 17700.409000000007
+    },
+    {
+      "country": "France",
+      "salt": 600.065717,
+      "sugar": 70000.98030000001
+    },
+    {
+      "country": "Belgium",
+      "salt": 979.3005369999896,
+      "sugar": 20900.99799999996
+    },
+    {
+      "country": "Switzerland",
+      "salt": 900.0132807139894,
+      "sugar": 20000.659999999974
+    },
+    {
+      "country": "Afghanistan",
+      "salt": 400.80176,
+      "sugar": 10000.62
+    },
+    {
+      "country": "India",
+      "sugar": "6000",
+      "salt": "3000"
+    },
+    {
+      "country": "Uk",
+      "sugar": "10000.8797979",
+      "salt": "5000.999"
+    }
+  ]
 }

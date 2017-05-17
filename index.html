@@ -1,102 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Jquery Ajax</title>
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <title>Jquery Ajax</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-	
-<!-- <div class="container">
-	 <div class="row">
-          
-       <div class="col-lg-12">
 
-			<table id="location" border="1">
-			<tr>
-			<th>Country</th>
-			<th>Salt</th>
-			<th>Sugar</th>
-			</tr>
-			</table>
-		</div>	
-<		<div class="col-lg-4" id="add-graph"></div>	 -->
-		<!-- </div>
-</div>	 --> 
-<!-- <div class="container">
-	<div class="row">
-		 <div class="col-lg-4">
-			<form method="post" >
-				<table id="add_item" border="0">
-				<div class="form-group">
- 					<tr><td>Country:</td><td><input type="text" id="country_Name" name="country"></td></tr>
- 					 <label class="col-sm-6 control-label" for="country">Email:</label>
-      				<input type="text" class="form-control" id="country" placeholder="Enter country name" name="country"> -->
- 					<!-- </div>
- 					<div class="form-group">
- 					<tr><td>Salt:</td><td><input type="text" id="salt_Value" name="salt"></td></tr>
- 					</div>
- 					<div class="form-group">
- 					<tr><td>Sugar:</td><td><input type="text" id="sugar_Value" name="sugar"></td></tr>
- 					</div>
- 					<div class="form-group">
- 					<tr><td></td><td><input type="button" class="btn btn-secondary" value="Add" id="add_value" name="btnAdd"></td></tr></div>
-  				</table>
-	</form> 
-	</div>
-</div> -->
-<!-- </div> --> 
-<div class="container row">
-    <div class="col-lg-5">
-      <table id="location" border="1" class="table table-striped">
-        <tr>
-          <th>Country</th>
-			<th>Salt</th>
-			<th>Sugar</th>
-        </tr>
-      </table>
+    <div class="container row">
+        <h2><strong>Stacked bar chart</strong></h2>
+        <div class="col-lg-5">
+            <table id="location" class="my_table" border="1">
+                <tr>
+                    <th>Country</th>
+                    <th>Salt</th>
+                    <th>Sugar</th>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-7">
+            <div id="graphWrap"></div>
+
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-6 control-label">Country Name</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="country_Name" placeholder="country" />
+                    </div>
+                    <label class="col-sm-6 control-label">Salt</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="salt_Value" placeholder="salt" />
+                    </div>
+                    <label class="col-sm-6 control-label">Sugar</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="sugar_Value" placeholder="sugar" />
+                    </div>
+                    <div class="col-sm-4 col-md-offset-8">
+                        <button class="btn btn-warning center" id="add_value">ADD</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
     </div>
-    <div class="col-lg-7" >
-    <div id="graphWrap"></div>
- 
-
-<form class="form-horizontal">
- <div class="form-group">
-                                 <label  class="col-sm-6 control-label"
-                                    >Country Name</label>
-                                 <div class="col-sm-6">
-                                    <input type="text" class="form-control"
-                                       id="country_Name" placeholder="country"/>
-                                 </div>
-                                 <label  class="col-sm-6 control-label"
-                                    >Salt</label>
-                                 <div class="col-sm-6">
-                                    <input type="text" class="form-control"
-                                       id="salt_Value" placeholder="salt"/>
-                                 </div>
-                                 <label  class="col-sm-6 control-label"
-                                    >Sugar</label>
-                                 <div class="col-sm-6">
-                                    <input type="text" class="form-control"
-                                       id="sugar_Value" placeholder="sugar"/>
-                                 </div>
-                                 <div class="col-sm-4 col-md-offset-8">
-                                    <button class="btn btn-warning center"
-                                       id="add_value">ADD</button>
-                                 </div>
-                              </div>
-                              </form>
-
-</div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="jqery.js"></script>
-<script src="barchart.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="jqery.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </body>
 </html>
