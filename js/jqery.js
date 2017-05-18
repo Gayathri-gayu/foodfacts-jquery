@@ -33,13 +33,15 @@ $(document).ready(function() {
     $('#add_value').on('click', function() {
         var item = {
             country: $country.val(),
-            sugar: $sugar.val(),
-            salt: $salt.val(),
+            sugar:parseFloat($sugar.val()),
+            salt: parseFloat($salt.val()),
         }
         $.ajax({
             type: 'POST',
             url: ' http://localhost:3000/name',
             data: item,
+            contentType: "application/json; charset=utf-8",
+            data : JSON.stringify(item),
             dataType: "json",
             success: function(newValue) {
 
@@ -111,9 +113,9 @@ $(document).ready(function() {
         d3.json("http://localhost:3000/name", function(err, data) {
             if (err) console.log("data not loaded");
             data.forEach(function(d) {
-                d.country = d.country;
-                d.salt = parseInt(d.salt);
-                d.sugar = parseInt(d.sugar);
+                // d.country = d.country;
+                // d.salt = parseInt(d.salt);
+                // d.sugar = parseInt(d.sugar);
             });
 
             var xData = ["sugar", "salt"];

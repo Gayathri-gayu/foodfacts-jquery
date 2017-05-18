@@ -84,6 +84,11 @@
       "country": " Norway",
       "sugar": "7000.9999",
       "salt": "560.8999"
+    },
+    {
+      "country": "Chicago",
+      "sugar": 20000,
+      "salt": 455.9999
     }
   ]
 }
