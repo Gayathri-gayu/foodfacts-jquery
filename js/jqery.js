@@ -8,7 +8,7 @@ $(document).ready(function() {
     jQuery.support.cors = true;
 
     function addValue(item) {
-        $loc.append('<tr><td>' + item.country + '</td><td>' + item.salt + '</td><td>' + item.sugar + '</td><td><button id="' + item.country + '" class="remove btn btn-primary">delete</button></td></tr>');
+        $loc.append('<tr><td>' + item.country + '</td><td>' + item.salt + '</td><td>' + item.sugar + '</td><td><button id="' + item.country + '" class="remove btn btn-warning">delete</button></td></tr>');
 
     }
     $.ajax({
@@ -83,14 +83,14 @@ $(document).ready(function() {
                 right: 90
             },
             width = 700 - margin.left - margin.right,
-            height = 700 - margin.top - margin.bottom;
+            height = 600 - margin.top - margin.bottom;
 
         // define x and y scales
 
         var horizontal = d3.scale.ordinal().rangeRoundBands([0, width], 0.12),
             vertical = d3.scale.linear().rangeRound([height, 0]);
 
-        var color = d3.scale.category20();
+        var color = d3.scale.category10();
 
         var xAxis = d3.svg.axis()
             .scale(horizontal)
@@ -113,9 +113,9 @@ $(document).ready(function() {
         d3.json("http://localhost:3000/name", function(err, data) {
             if (err) console.log("data not loaded");
             data.forEach(function(d) {
-                // d.country = d.country;
-                // d.salt = parseInt(d.salt);
-                // d.sugar = parseInt(d.sugar);
+                d.country = d.country;
+                d.salt = parseInt(d.salt);
+                d.sugar = parseInt(d.sugar);
             });
 
             var xData = ["sugar", "salt"];
@@ -179,8 +179,8 @@ $(document).ready(function() {
                 .selectAll('text')
                 .attr("transform", "translate(" + width + ",0)")
                 .attr("transform", "rotate(-70)")
-                .attr("dy", "-0.5em")
-                .attr("dx", "-.60em")
+                .attr("dy", "-0.10em")
+                .attr("dx", "-.50em")
                 .style("font-size", "15px")
                 .style("font-weight", "bold")
                 .style("text-anchor", "end")
@@ -189,7 +189,7 @@ $(document).ready(function() {
                 .attr("class", "x label")
                 .attr("text-anchor", "end")
                 .attr("x", "520")
-                .attr("y", "600")
+                .attr("y", "490")
                 .style('fill', 'rgb(31, 119, 180)')
                 .style("font-size", "15px")
                 .text("countries");

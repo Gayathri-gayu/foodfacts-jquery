@@ -1,9 +1,9 @@
 body
 {
-	background-color:#ffe6ee;
+	background-color:;
 }
 .my_table{
-    margin-top:70px;
+    margin-top:20px;
     margin-left:10px ;
 }
 h2
@@ -11,3 +11,22 @@ h2
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 }
+.axis path,
+.axis line {
+  fill:none;
+  stroke:#000;
+  shape-rendering: crispEdges;
+  stroke-width:1.5;
+}
+
+form
+{
+    margin-top:40px;
+}
+
+.table th, .table td {
+    border: 1px !important;
+}
+
+
+

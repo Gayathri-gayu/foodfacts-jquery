@@ -31,11 +31,6 @@
       "sugar": 16118.659999999974
     },
     {
-      "country": "South Africa",
-      "salt": 4.801759999999999,
-      "sugar": 100.61999999999999
-    },
-    {
       "country": "Angola",
       "salt": 1365.51094,
       "sugar": 17070.83
@@ -89,6 +84,16 @@
       "country": "Chicago",
       "sugar": 20000,
       "salt": 455.9999
+    },
+    {
+      "country": "Turkey",
+      "sugar": 40000,
+      "salt": 700.999
+    },
+    {
+      "country": "Sweden",
+      "sugar": 45000,
+      "salt": 899
     }
   ]
 }
